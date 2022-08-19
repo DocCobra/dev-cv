@@ -1,1 +1,20 @@
-<span>{{ typewriterText }}</span><typewriter-cursor></typewriter-cursor>
+<div id="personalInfoSection">
+  <img src="../../assets/pic.jpg" />
+  <div>
+    <div class="name glitch-effect" style="--stacks: 3;">
+      <span style="--index: 0;">{{ nameText }}</span>
+      <span style="--index: 1;">{{ nameText }}</span>
+      <span style="--index: 2;">{{ nameText }}</span>
+    </div>
+  
+    <div>
+      <p><mat-icon>place</mat-icon><span>Florence, IT</span></p>
+      <p><mat-icon>cake</mat-icon><span>30/04/1994</span></p>
+      <p (click)="revealEmail()" class="email"><mat-icon>mail</mat-icon><span [ngClass]="{ 'hideEmail': hideEmail }">{{ email }}</span><mat-icon *ngIf="hideEmail" class="hideEmailIcon">touch_app</mat-icon></p>
+    </div>
+  </div>
+</div>
+
+<p><span class="typewriterText">{{ typewriterText }}</span><typewriter-cursor></typewriter-cursor></p>
+
+
