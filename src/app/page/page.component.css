@@ -14,10 +14,6 @@
     flex-flow: column nowrap;
 }
 
-mat-divider {
-    background-color: #CCCCCC;
-}
-
 typewriter-text {
     margin: 28px 0; 
 }

@@ -14,13 +14,23 @@ export class PersonalInfoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void { }
+
+  fix(s: string): string {
+    return s.split('').reverse().join('');
+  }
   
   revealEmail(): void {
     const p1 = 'eleinad';
     const p2 = 'inirrot'; 
     const p3 = 'gro'; 
 
-    this.email = p1.split('').reverse().join('') + '@' + p2.split('').reverse().join('') + '.' + p3.split('').reverse().join(''); 
     this.hideEmail = false; 
+    this.email = [
+      this.fix(p1),
+      '@',
+      this.fix(p2),
+      '.',
+      this.fix(p3)
+    ].join(''); 
   }
 }
