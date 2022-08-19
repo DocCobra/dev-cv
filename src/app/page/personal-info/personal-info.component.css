@@ -1,6 +1,6 @@
 
 img {
-    width: 160px;
+    width: 142px;
     height: auto;
     border: 1px solid black; 
 }
@@ -32,8 +32,9 @@ section p {
 }
 
 section > div {
-    width: 100%; 
+    min-width: 1%; 
     padding: 8px 0;
+    flex-grow: 1; 
 
     display: flex; 
     flex-flow: column nowrap; 

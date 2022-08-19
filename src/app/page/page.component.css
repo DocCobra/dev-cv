@@ -1,8 +1,10 @@
 :host {
-    width: 790px; 
+    width: 100%; 
+    max-width: 790px; 
     height: 1403px; 
 
     padding: 32px; 
+    margin: 32px 16px; 
     border-radius: 8px;
 
     color: #CCCCCC;
@@ -17,5 +19,5 @@ mat-divider {
 }
 
 typewriter-text {
-    margin: 12px 0; 
+    margin: 28px 0; 
 }
