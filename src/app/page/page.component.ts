@@ -9,13 +9,8 @@ import { TypewriterService } from '../typewriter/typewriter.service';
   styleUrls: ['./page.component.css']
 })
 export class PageComponent implements OnInit {
-  nameText: string = 'Daniele Torrini'; 
-
   typewriterText: string = '';   
-  waitTime: number = 1200; 
-  
-  hideEmail: boolean = true; 
-  email: string = 'email@example.com'; 
+  waitTime: number = 1600; 
 
   constructor(private typewriterSvc: TypewriterService) { }
 
@@ -41,21 +36,12 @@ export class PageComponent implements OnInit {
   }
 
   twDelete(strings: string[], index: number): void {
-    this.typewriterSvc.deleter(strings[index]).subscribe({
+    this.typewriterSvc.deleter(strings[index], 35).subscribe({
       next: (text: string) => { this.typewriterText = text; },
       complete: () => setTimeout(() => {
         if (++index >= strings.length) index = 0; 
         this.twWrite(strings, index);
-      }, this.waitTime) 
+      }, this.waitTime / 2) 
     }); 
-  }
-
-  revealEmail(): void {
-    const p1 = 'eleinad';
-    const p2 = 'inirrot'; 
-    const p3 = 'gro'; 
-
-    this.email = p1.split('').reverse().join('') + '@' + p2.split('').reverse().join('') + '.' + p3.split('').reverse().join(''); 
-    this.hideEmail = false; 
   }
 }
