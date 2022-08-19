@@ -12,6 +12,7 @@ import { PersonalInfoComponent } from './page/personal-info/personal-info.compon
 import { TypewriterCursorComponent } from './typewriter/cursor/cursor.component';
 import { TypewriterTextComponent } from './typewriter/text/text.component';
 import { SectionDividerComponent } from './page/section-divider/section-divider.component';
+import { EntryComponent } from './page/entry/entry.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SectionDividerComponent } from './page/section-divider/section-divider.
     TypewriterCursorComponent,
     PersonalInfoComponent,
     TypewriterTextComponent,
-    SectionDividerComponent
+    SectionDividerComponent,
+    EntryComponent
   ],
   imports: [
     BrowserModule,
