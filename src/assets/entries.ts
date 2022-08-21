@@ -1,3 +1,10 @@
+export const TypewriterStrings = [
+    "Full Stack Developer",
+    "HTML5 | CSS3 | JS/TS | Angular 2+",
+    "PHP | Node | SQL",
+    "C# | Unity | Unreal Engine | VR/AR"
+]; 
+
 export const Entries = {
     'experience': [
         {
@@ -22,21 +29,21 @@ export const Entries = {
             'title': 'Software Developer & IT Consultant', 
             'content': 'Ricerca e sviluppo, anche in autonomia, di software proprietari per la gestione di challenge aziendali interne e di clienti nell\'ambito della sicurezza sul lavoro e dell\'organizzazione aziendale.\nIdeazione e realizzazione del nuovo sistema gestionale informatico aziendale su misura, per l\'interconnessione delle anagrafiche clienti, fornitori, gestione delle offerte e dei rapporti commerciali, rendicontazione dipendenti e spese, reportistica, sistema di fatturazione elettronica.', 
             'startDate': '01/01/08',
-            'endDate': '-'
+            'endDate': 'CURRENT'
         },
     ],
     'education': [
-        {
-            'title': 'Perito Industriale Capotecnico Specializ. Informatica', 
-            'content': 'Architettura IT\nSistemi Operativi e Network\nApplicazioni in C++, C#, Ambienti Database (MySQL).', 
-            'startDate': '01/09/2008',
-            'endDate': '30/06/2013'   
-        },
         {
             'title': 'Facoltà di Ingegneria Informatica', 
             'content': 'Ingegneria del Software, Strutture e Architetture Dati, Analisi, IT Industriale, Telematica.', 
             'startDate': '15/09/2013',
             'endDate': '15/09/2014'   
+        },
+        {
+            'title': 'Perito Ind. Capotecnico Spec. Informatica', 
+            'content': 'Architettura IT\nSistemi Operativi e Network\nApplicazioni in C++, C#, Ambienti Database (MySQL).', 
+            'startDate': '01/09/2008',
+            'endDate': '30/06/2013'   
         }
     ]
 };
