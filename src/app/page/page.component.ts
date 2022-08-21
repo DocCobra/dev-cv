@@ -3,6 +3,8 @@ import { Observable } from 'rxjs';
 
 import { TypewriterService } from '../typewriter/typewriter.service';
 
+import { Entries, TypewriterStrings } from 'src/assets/entries';
+
 @Component({
   selector: 'app-page',
   templateUrl: './page.component.html',
@@ -12,18 +14,15 @@ export class PageComponent implements OnInit {
   typewriterText: string = '';   
   waitTime: number = 1600; 
 
+  twStrings = TypewriterStrings; 
+  entries = Entries; 
+
   constructor(private typewriterSvc: TypewriterService) { }
 
   ngOnInit(): void {
     let i = 0; 
-    const strings = [
-      "Full Stack Developer",
-      "HTML5 | CSS3 | JS/TS | Angular 2+",
-      "PHP | Node | SQL",
-      "C# | Unity | Unreal Engine | VR/AR"
-    ]; 
 
-    this.twWrite(strings, i); 
+    this.twWrite(this.twStrings, i); 
   }
 
   twWrite(strings: string[], index: number): void {
