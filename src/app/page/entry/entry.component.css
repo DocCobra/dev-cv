@@ -1,0 +1,77 @@
+:host {
+    width: 100%; 
+    
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: flex-start; 
+    align-items: stretch; 
+}
+
+#date-range, 
+#date-trail {
+    display: flex; 
+    flex-flow: column nowrap; 
+}
+
+#date-range {
+    width: 30%; 
+}
+
+#date-trail {
+    width: 10%; 
+}
+
+#date-range > span, 
+#date-trail > span {
+    color: #272822;
+    background-color: #CCCCCC; 
+
+    padding: 8px 16px; 
+}
+
+#date-range > span:first-of-type {
+    align-self: flex-end;
+
+    border-top-left-radius: 8px; 
+    border-bottom-left-radius: 8px; 
+}
+
+div .spacer {
+    width: 100%; 
+    height: auto; 
+    min-height: 8px; 
+    flex-grow: 1; 
+}
+
+#date-range > span:not(:first-of-type) {
+    align-self: flex-start;
+
+    border-top-right-radius: 8px; 
+    border-bottom-right-radius: 8px; 
+}
+
+#entry-info {
+    width: 60%; 
+}
+
+#entry-info > span {
+    display: flex; 
+    flex-flow: row nowrap; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#entry-info > span:first-of-type {
+    height: 35px; 
+    font-size: 22px;
+
+    color: #272822;
+    background-color: #CCCCCC; 
+}
+
+#entry-info > span:not(:first-of-type) {
+    font-size: 16px; 
+    margin: 16px;
+    text-align: justify;
+}
+
