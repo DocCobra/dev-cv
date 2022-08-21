@@ -1,7 +1,6 @@
 :host {
     width: 100%; 
     max-width: 790px; 
-    height: 1403px; 
 
     margin: 32px 16px; 
     border-radius: 8px;
@@ -21,4 +20,15 @@ typewriter-text {
 section-divider {
     margin-bottom: 12px; 
     padding: 0 32px; 
+}
+
+div {
+    display: flex; 
+    flex-flow: column-reverse nowrap;
+    justify-content: center; 
+    align-items: center; 
+}
+
+app-entry {
+    margin-bottom: 48px; 
 }

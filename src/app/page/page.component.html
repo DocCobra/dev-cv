@@ -2,6 +2,26 @@
 
 <typewriter-text [text]="typewriterText"></typewriter-text>
 
-<section-divider [title]="'EDUCATION'"></section-divider>
+<section-divider [title]="'EXPERIENCE'"></section-divider>
 
-<app-entry></app-entry>
+<div>
+  <app-entry 
+  *ngFor="let e of entries.experience"
+  [title]="e.title"
+  [content]="e.content"
+  [startDate]="e.startDate"
+  [endDate]="e.endDate">
+  </app-entry>
+</div>
+
+<section-divider [title]="'EDUCATION'" style="margin-top: 48px; "></section-divider>
+
+<div>
+  <app-entry 
+  *ngFor="let e of entries.education"
+  [title]="e.title"
+  [content]="e.content"
+  [startDate]="e.startDate"
+  [endDate]="e.endDate">
+  </app-entry>
+</div>
