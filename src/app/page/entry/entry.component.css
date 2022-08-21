@@ -44,7 +44,10 @@ div .spacer {
 }
 
 #date-range > span:not(:first-of-type) {
+    width: 70%; 
+
     align-self: flex-start;
+    text-align: end; 
 
     border-top-right-radius: 8px; 
     border-bottom-right-radius: 8px; 
