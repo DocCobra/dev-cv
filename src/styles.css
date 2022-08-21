@@ -14,3 +14,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+#skills li span {
+    font-weight: 700; 
+}
