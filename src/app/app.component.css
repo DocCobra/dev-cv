@@ -12,3 +12,10 @@
     overflow-y: scroll; 
     scrollbar-width: thin;
 }
+
+/* For navigating to top of page from navmenu */
+#top {
+    visibility: hidden; 
+    width: 0;
+    height: 0; 
+}
