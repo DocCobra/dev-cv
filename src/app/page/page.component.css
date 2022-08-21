@@ -22,7 +22,7 @@ section-divider {
     padding: 0 32px; 
 }
 
-div:not(.skills) {
+div:not(#skills) {
     display: flex; 
     flex-flow: column-reverse nowrap;
     justify-content: center; 
@@ -31,4 +31,33 @@ div:not(.skills) {
 
 app-entry {
     margin-bottom: 48px; 
+}
+
+#skills {
+    padding: 0 48px 32px 48px; 
+}
+
+ul {
+    margin: 0; 
+    padding: 0 16px; 
+}
+
+li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+    margin-bottom: 6px; 
+}
+  
+li::before {
+    content: "•";
+    margin-right: 8px;
+
+    color: #CCCCCC;
+}
+
+li span {
+    font-weight: 700; 
 }
