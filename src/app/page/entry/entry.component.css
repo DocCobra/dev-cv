@@ -18,7 +18,7 @@
 }
 
 #date-trail {
-    width: 10%; 
+    width: 5%; 
 }
 
 #date-range > span, 
@@ -54,7 +54,8 @@ div .spacer {
 }
 
 #entry-info {
-    width: 60%; 
+    width: 100%; 
+    flex-shrink: 1;
 }
 
 #entry-info > span {
@@ -78,6 +79,7 @@ div .spacer {
     font-size: 16px; 
     margin: 16px;
     text-align: justify;
+    justify-content: flex-start; 
 }
 
 #entry-info > span.largeTitle {
