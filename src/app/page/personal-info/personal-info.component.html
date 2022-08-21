@@ -1,7 +1,7 @@
 <section>
   <img src="../../assets/pic.jpg" />
   <div>
-    <div class="name glitch-effect" style="--stacks: 3;">
+    <div class="name glitch-effect" style="--stacks: 3;" [ngClass]="{ 'smallScreen': smallScreen }">
       <span style="--index: 0;">{{ nameText }}</span>
       <span style="--index: 1;">{{ nameText }}</span>
       <span style="--index: 2;">{{ nameText }}</span>

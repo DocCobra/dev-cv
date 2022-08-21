@@ -62,6 +62,8 @@ div .spacer {
     flex-flow: row nowrap; 
     justify-content: center; 
     align-items: center;
+
+    transition: font-size .1s ease; 
 }
 
 #entry-info > span:first-of-type {
@@ -78,3 +80,6 @@ div .spacer {
     text-align: justify;
 }
 
+#entry-info > span.largeTitle {
+    font-size: 20px; 
+}

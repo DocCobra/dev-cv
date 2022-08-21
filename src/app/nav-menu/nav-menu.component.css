@@ -3,9 +3,9 @@
     max-width: var(--max-menu-width); 
 
     position: fixed;
-    left: calc(((100% - var(--max-page-width)) / 2) + var(--max-page-width)); 
+    left: calc(((100% - var(--max-page-width)) / 2) + var(--max-page-width) + 16px); 
 
-    margin: 32px 16px; 
+    margin: 32px 0; 
     border-radius: 8px;
 
     padding: 16px; 
@@ -15,6 +15,40 @@
 
     display: flex; 
     flex-flow: column nowrap;
+
+    transition: left .2s ease, max-width .2s ease, padding .2s ease, color .2s ease, background-color .2s ease; 
+}
+
+@media screen and (max-width: 1350px) {
+    :host {
+        max-width: 24px; 
+        height: 24px; 
+
+        left: unset; 
+        right: 32px;
+        bottom: 32px; 
+
+        margin: 0; 
+        padding: 12px;
+
+        color: #272822;     
+        background-color: #CCCCCC;
+    }
+
+    mat-icon {
+        color: #272822;     
+        margin-bottom: 4px; 
+    }
+}
+
+@media screen and (min-width: 1351px) {
+    a {
+        font-size: 18px; 
+    }
+
+    a:hover {
+        margin-left: 8px; 
+    }
 }
 
 p {
@@ -26,8 +60,8 @@ p {
 }
 
 a {
-    font-size: 18px; 
     text-decoration: none;
+    color: #CCCCCC; 
 
     margin: 0; 
     
@@ -36,8 +70,4 @@ a {
 
 a:visited {
     color: inherit; 
-}
-
-a:hover {
-    margin-left: 8px; 
 }

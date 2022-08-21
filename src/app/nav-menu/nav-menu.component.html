@@ -1,4 +1,11 @@
-<p><mat-icon>keyboard_arrow_right</mat-icon><a href="#top">Personal Info</a></p>
-<p><mat-icon>keyboard_arrow_right</mat-icon><a href="#experience">Experience</a></p>
-<p><mat-icon>keyboard_arrow_right</mat-icon><a href="#education">Education</a></p>
-<p><mat-icon>keyboard_arrow_right</mat-icon><a href="#skills">Skills</a></p>
+<div *ngIf="layout === 'large'">
+  <p><mat-icon>keyboard_arrow_right</mat-icon><a href="#top">Personal Info</a></p>
+  <p><mat-icon>keyboard_arrow_right</mat-icon><a href="#experience">Experience</a></p>
+  <p><mat-icon>keyboard_arrow_right</mat-icon><a href="#education">Education</a></p>
+  <p><mat-icon>keyboard_arrow_right</mat-icon><a href="#skills">Skills</a></p>
+</div>
+
+<div *ngIf="layout === 'small'">
+  <a href="#top"><mat-icon>arrow_upward</mat-icon></a>
+</div>
+

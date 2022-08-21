@@ -49,6 +49,12 @@ section > div {
     font-weight: 500; 
     font-size: 36px; 
     margin: 0 0 6px 0;
+
+    transition: font-size .1s ease; 
+}
+
+.name.smallScreen span {
+    font-size: 28px; 
 }
 
 .email {

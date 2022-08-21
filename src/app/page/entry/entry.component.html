@@ -5,7 +5,7 @@
 </div>
 
 <div id="entry-info">
-  <span>{{ entryTitle }}</span>
+  <span [ngClass]="{ 'largeTitle': largeTitle && smallScreen }">{{ entryTitle }}</span>
   <span>{{ entryContent }}</span>
 </div>
 

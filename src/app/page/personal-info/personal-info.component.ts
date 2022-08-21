@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { BreakpointObserver } from '@angular/cdk/layout';
+
 @Component({
   selector: 'personal-info',
   templateUrl: './personal-info.component.html',
@@ -11,9 +13,17 @@ export class PersonalInfoComponent implements OnInit {
   hideEmail: boolean = true; 
   email: string = 'email@example.com'; 
 
-  constructor() { }
+  smallScreen: boolean = false; 
 
-  ngOnInit(): void { }
+  constructor(private breakpointObserver: BreakpointObserver) { }
+
+  ngOnInit(): void { 
+    this.breakpointObserver.observe([
+      '(max-width: 630px)'
+    ]).subscribe(state => {
+      this.smallScreen = state.matches ? true : false; 
+    });
+  }
 
   fix(s: string): string {
     return s.split('').reverse().join('');

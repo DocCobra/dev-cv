@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { LayoutType } from '../app.component';
 
 @Component({
   selector: 'app-nav-menu',
@@ -6,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-menu.component.css']
 })
 export class NavMenuComponent implements OnInit {
+  @Input() layout: LayoutType = 'large'; 
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
