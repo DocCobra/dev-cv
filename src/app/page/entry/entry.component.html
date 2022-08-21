@@ -6,7 +6,7 @@
 
 <div id="entry-info">
   <span [ngClass]="{ 'largeTitle': largeTitle && smallScreen }">{{ entryTitle }}</span>
-  <span>{{ entryContent }}</span>
+  <span [innerHTML]="entryContent"></span>
 </div>
 
 <div id="date-trail">
