@@ -45,5 +45,14 @@ export const Entries = {
             'startDate': '01/09/2008',
             'endDate': '30/06/2013'   
         }
+    ],
+    'skills': [
+        { 'content': '<span>Full Stack</span>&nbsp;con facilità di apprendimento di nuovi linguaggi di programmazione e scripting.' }, 
+        { 'content': '<span>Frontend</span>: HTML5, CSS3, JS/TS, Angular 2+' }, 
+        { 'content': '<span>Backend</span>: PHP, Node, SQL' },
+        { 'content': '<span>Desktop</span>: C#' }, 
+        { 'content': 'Competente nell\'utilizzo di Unity (C#) e Unreal Engine 4 (Blueprint) per creazione di applicazioni e videogiochi indipendenti, compreso il campo VR/AR.' }, 
+        { 'content': 'Ottima esperienza tecnica hardware e software in ambito IT (installazione/configurazione, manutenzione ordinaria/straordinaria e troubleshooting).' },
+        { 'content': 'Networking e configurazione reti.' }
     ]
 };
