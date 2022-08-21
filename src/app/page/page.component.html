@@ -1,10 +1,10 @@
-<personal-info></personal-info>
+<personal-info id="personal-info"></personal-info>
 
 <typewriter-text [text]="typewriterText"></typewriter-text>
 
 <section-divider [title]="'# EXPERIENCE'"></section-divider>
 
-<div>
+<div id="experience">
   <app-entry 
   *ngFor="let e of entries.experience"
   [title]="e.title"
@@ -16,7 +16,7 @@
 
 <section-divider [title]="'# EDUCATION'" style="margin-top: 48px; "></section-divider>
 
-<div>
+<div id="education">
   <app-entry 
   *ngFor="let e of entries.education"
   [title]="e.title"
@@ -24,4 +24,10 @@
   [startDate]="e.startDate"
   [endDate]="e.endDate">
   </app-entry>
+</div>
+
+<section-divider [title]="'# SKILLS'" style="margin-top: 48px; "></section-divider>
+
+<div id="skills">
+
 </div>

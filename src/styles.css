@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+    --max-page-width: 790px; 
+    --max-menu-width: 200px; 
+}
+
+* { scroll-behavior: smooth; }
 html, body { height: 100%; }
 body { 
     margin: 0; 

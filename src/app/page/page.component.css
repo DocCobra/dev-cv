@@ -1,6 +1,6 @@
 :host {
     width: 100%; 
-    max-width: 790px; 
+    max-width: var(--max-page-width); 
 
     margin: 32px 16px; 
     border-radius: 8px;
@@ -22,7 +22,7 @@ section-divider {
     padding: 0 32px; 
 }
 
-div {
+div:not(.skills) {
     display: flex; 
     flex-flow: column-reverse nowrap;
     justify-content: center; 

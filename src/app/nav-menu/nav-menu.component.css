@@ -1,0 +1,43 @@
+:host {
+    width: 100%; 
+    max-width: var(--max-menu-width); 
+
+    position: fixed;
+    left: calc(((100% - var(--max-page-width)) / 2) + var(--max-page-width)); 
+
+    margin: 32px 16px; 
+    border-radius: 8px;
+
+    padding: 16px; 
+
+    color: #CCCCCC;
+    background-color: #272822; 
+
+    display: flex; 
+    flex-flow: column nowrap;
+}
+
+p {
+    margin: 0; 
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+a {
+    font-size: 18px; 
+    text-decoration: none;
+
+    margin: 0; 
+    
+    transition: margin .2s ease; 
+}
+
+a:visited {
+    color: inherit; 
+}
+
+a:hover {
+    margin-left: 8px; 
+}

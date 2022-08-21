@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 
 import { TypewriterService } from '../typewriter/typewriter.service';
 
