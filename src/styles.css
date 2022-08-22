@@ -17,4 +17,15 @@ body {
 
 #skills li span {
     font-weight: 700; 
+
+    display: inline-flex; 
+    flex-flow: row nowrap;
+
+    transition: font-size .1s ease; 
+}
+
+@media screen and (max-width: 515px) {
+    #skills li span {
+        font-size: 14px; 
+    }
 }

@@ -33,6 +33,11 @@ app-entry {
     margin-bottom: 48px; 
 }
 
+#skills, 
+ul {
+    transition: padding .2s ease; 
+}
+
 #skills {
     padding: 0 48px 32px 48px; 
 }
@@ -58,14 +63,24 @@ li::before {
     color: #CCCCCC;
 }
 
-li span {
-    font-weight: 700; 
-}
-
 /* Queries */
+
+@media screen and (max-width: 630px) {    
+    #skills {
+        padding: 0 24px 32px 24px; 
+    }
+}
 
 @media screen and (max-width: 515px) {
     typewriter-text {
         margin: 14px 0; 
+    }
+
+    #skills {
+        padding: 0 8px 16px 8px; 
+    }
+
+    ul {
+        padding: 0 8px; 
     }
 }

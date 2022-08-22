@@ -30,6 +30,6 @@
 
 <div id="skills">
   <ul>
-    <li *ngFor="let e of entries.skills" [innerHTML]="e.content"></li>
+    <li *ngFor="let e of entries.skills" [innerHTML]="'<div>' + e.content + '</div>'"></li>
   </ul>
 </div>

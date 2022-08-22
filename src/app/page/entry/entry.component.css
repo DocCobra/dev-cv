@@ -7,6 +7,16 @@
     align-items: stretch; 
 }
 
+span {
+    transition: font-size .1s ease; 
+}
+
+#date-range,
+#date-trail, 
+#entry-info {
+    transition: width .2s ease; 
+}
+
 #date-range, 
 #date-trail {
     display: flex; 
@@ -53,6 +63,9 @@
 
     border-top-right-radius: 8px; 
     border-bottom-right-radius: 8px; 
+
+    display: flex; 
+    justify-content: flex-end; 
 }
 
 div .spacer {
@@ -72,8 +85,6 @@ div .spacer {
     flex-flow: row nowrap; 
     justify-content: center; 
     align-items: center;
-
-    transition: font-size .1s ease; 
 }
 
 #entry-info > span:first-of-type {
@@ -87,6 +98,51 @@ div .spacer {
     justify-content: flex-start; 
 }
 
-#entry-info > span.largeTitle {
-    font-size: 20px; 
+/* Queries */
+
+@media screen and (max-width: 1350px) {
+    #date-range > span {
+        font-size: 14px; 
+    }
+}
+
+@media screen and (max-width: 630px) {
+    #date-range > span {
+        font-size: 12px; 
+    }
+
+    #entry-info > span:first-of-type {
+        font-size: 18px;    
+    }
+}
+
+@media screen and (max-width: 515px) {   
+    #date-range {
+        width: 34%;
+    }
+
+    #date-range > span {
+        font-size: 10px; 
+    }
+
+    #date-range > span:not(:first-of-type) {
+        width: 85%; 
+    }
+
+    #date-trail {
+        width: 1%; 
+    }
+
+    #date-trail > span {
+        padding: 0; 
+    }
+
+    #entry-info > span:first-of-type {
+        font-size: 14px; 
+    }
+
+    #entry-info > span:not(:first-of-type) {
+        font-size: 14px; 
+        margin: 8px; 
+    }
 }

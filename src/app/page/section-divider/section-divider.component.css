@@ -16,4 +16,18 @@ mat-divider {
 span {
     align-self: flex-end; 
     font-size: 34px; 
+
+    transition: font-size .1s ease; 
+}
+
+@media screen and (max-width: 630px) {
+    span {
+        font-size: 30px; 
+    }
+}
+
+@media screen and (max-width: 515px) {
+    span {
+        font-size: 26px; 
+    }
 }
