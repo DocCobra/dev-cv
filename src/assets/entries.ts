@@ -28,7 +28,7 @@ export const Entries = {
         {
             'title': 'Software Developer & IT Consultant', 
             'content': 'Ricerca e sviluppo, anche in autonomia, di software proprietari per la gestione di challenge aziendali interne e di clienti nell\'ambito della sicurezza sul lavoro e dell\'organizzazione aziendale.<br>Ideazione e realizzazione del nuovo sistema gestionale informatico aziendale su misura, per l\'interconnessione delle anagrafiche clienti, fornitori, gestione delle offerte e dei rapporti commerciali, rendicontazione dipendenti e spese, reportistica, sistema di fatturazione elettronica.', 
-            'startDate': '01/01/08',
+            'startDate': '01/01/2018',
             'endDate': 'CURRENT'
         },
     ],
