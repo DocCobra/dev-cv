@@ -6,6 +6,8 @@ img {
     width: 142px;
     height: 142px;
     border: 1px solid black; 
+
+    transition: width .2s ease, height .2s ease; 
 }
 
 span {
@@ -53,10 +55,6 @@ section > div {
     transition: font-size .1s ease; 
 }
 
-.name.smallScreen span {
-    font-size: 28px; 
-}
-
 .email {
     position: relative; 
 }
@@ -80,6 +78,33 @@ section > div {
     top: 0;
     left: 50%; 
     transform: translateX(-50%); 
+}
+
+/* Queries */ 
+
+@media screen and (max-width: 630px) {
+    .name span {
+        font-size: 28px; 
+    }
+}
+
+@media screen and (max-width: 515px) {
+    :host {
+        padding: 1rem 1rem 0 1rem; 
+    }
+
+    img {
+        width: 71px;
+        height: 71px; 
+    }
+
+    section {
+        padding: 0 0.5rem; 
+    }
+
+    .name span {
+        font-size: 24px; 
+    }
 }
 
 /* ############# */

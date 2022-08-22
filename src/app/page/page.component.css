@@ -61,3 +61,11 @@ li::before {
 li span {
     font-weight: 700; 
 }
+
+/* Queries */
+
+@media screen and (max-width: 515px) {
+    typewriter-text {
+        margin: 14px 0; 
+    }
+}

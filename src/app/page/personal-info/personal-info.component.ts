@@ -13,16 +13,9 @@ export class PersonalInfoComponent implements OnInit {
   hideEmail: boolean = true; 
   email: string = 'email@example.com'; 
 
-  smallScreen: boolean = false; 
-
-  constructor(private breakpointObserver: BreakpointObserver) { }
+  constructor() { }
 
   ngOnInit(): void { 
-    this.breakpointObserver.observe([
-      '(max-width: 630px)'
-    ]).subscribe(state => {
-      this.smallScreen = state.matches ? true : false; 
-    });
   }
 
   fix(s: string): string {

@@ -4,3 +4,15 @@ span {
     font-family: 'Courier Prime', monospace;
     font-size: 16px; 
 }
+
+@media screen and (max-width: 515px) {
+    span {
+        font-size: 14px; 
+    }
+}
+
+@media screen and (max-width: 400px) {
+    span {
+        font-size: 11px; 
+    }
+}
